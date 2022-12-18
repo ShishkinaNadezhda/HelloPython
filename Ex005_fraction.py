@@ -23,10 +23,18 @@
 #     print('no')
 
 # третий вариант:
-user_number = float(input('Enter your number: '))
-print(user_number, end=' -> ')
+# user_number = float(input('Enter your number: '))
+# print(user_number, end=' -> ')
 
-if user_number % 1 == 0:
-    print('no')
+#if user_number % 1 == 0:
+#    print('no')
+#else:
+#    print(int(user_number % 1 * 10))
+
+# четвертый вариант:
+num = input('Введите дробное число: ')
+if num.isdigit():
+    print('нет')
 else:
-    print(int(user_number % 1 * 10))
+    num = int(float(num)*10 % 10)
+    print(num)
