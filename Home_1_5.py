@@ -11,5 +11,6 @@ yb = int(input('Введите координату y точки B: '))
 #distanceX = (xb - xa)*(xb - xa)
 #distanceY = (ya - yb)*(ya - yb)
 import cmath
-i = (cmath.sqrt((xb - xa)*(xb - xa) + (ya - yb)*(ya - yb)))
+i = round((cmath.sqrt((xb - xa)*(xb - xa) + (ya - yb)*(ya - yb))),2)
+#i = (cmath.sqrt((xb - xa)*(xb - xa) + (ya - yb)*(ya - yb)))
 print(f'A ({xa}, {ya}); B ({xb, yb}) -> {i}')
